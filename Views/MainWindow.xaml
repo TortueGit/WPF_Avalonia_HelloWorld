@@ -8,7 +8,7 @@
         x:Class="MyApp.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="MyApp"
-        Content="{Binding List}">
+        Content="{Binding Content}">
 
     <!-- 
     <Design.DataContext>
@@ -18,6 +18,6 @@
     <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     -->
 
-    <views:MyFirstNewListView/>
+    <!-- <views:MyFirstNewListView/> -->
 
 </Window>

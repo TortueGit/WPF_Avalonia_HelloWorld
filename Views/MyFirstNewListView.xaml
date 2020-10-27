@@ -8,7 +8,10 @@
     https://avaloniaui.net/docs/tutorial/creating-a-view
   -->
   <DockPanel>
-    <Button DockPanel.Dock="Bottom">Add an item</Button>
+    <Button DockPanel.Dock="Bottom"
+            Command="{Binding $parent[Window].DataContext.AddItem}">
+      Add an item
+    </Button>
     <ItemsControl Items="{Binding Items}">
       <ItemsControl.ItemTemplate>
         <DataTemplate>
